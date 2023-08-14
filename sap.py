@@ -6,32 +6,32 @@ app = Flask(__name__)
 
 production_order = [
     {
-        "quantidade_planejada": "500900",
-        "op_number": 123456789,
-        "produtividade": {
-            "data": "2023-07-12",
-            "quantidade_esperada": 9000,
+        "op_number": "123456789",
+        "production_goal_expected": "500",
+        "tubo": {
+            "descricao_tubo": "2023-07-12",
+            "pipe_model_code": "ARC321423341234",
         }
     },
     {
-        "quantidade_planejada": "500900",
-        "op_number": 987654321,
-        "produtividade": {
-            "data": "2023-07-12",
-            "quantidade_esperada": 8000,
+        "op_number": "987654321",
+        "production_goal_expected": "500",
+        "tubo": {
+            "descricao_tubo": "2023-07-12",
+            "pipe_model_code": "ARC321423341234",
         }
     },
     {
-        "quantidade_planejada": "500900",
-        "op_number": 192837465,
-        "produtividade": {
-            "data": "2023-07-12",
-            "quantidade_esperada": 6000,
+        "op_number": "192837465",
+        "production_goal_expected": "500",
+        "tubo": {
+            "descricao_tubo": "2023-07-12",
+            "pipe_model_code": "ARC321423341234",
         }
     }
 ]
 
-@app.route('/<int:op_number>')
+@app.route('/<string:op_number>')
 def get_produtividade(op_number):
     for op in production_order:
         if op['op_number'] == op_number:
