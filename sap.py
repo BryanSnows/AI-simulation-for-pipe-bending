@@ -4,7 +4,7 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-const production_order = [
+production_order = [
     {
         "op_number": "123456789",
         "production_goal_expected": "500",
