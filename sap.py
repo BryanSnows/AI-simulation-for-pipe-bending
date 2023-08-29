@@ -100,6 +100,14 @@ production_order = [
             "descricao_tubo": "SKCWVLMLM",
             "cod_tubo": "ARC564879562136",
         }
+    },
+    {
+        "op_number": "11111111",
+        "production_goal_expected": "10000",
+        "tubo": {
+            "descricao_tubo": "SKCWVLMLM",
+            "cod_tubo": "ARC5264879561112136",
+        }
     }
 ];
 
